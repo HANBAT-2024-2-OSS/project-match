@@ -5,7 +5,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyA5_Od-qQAK1moiGMKillBWQ8yzOku9Wkg",
   authDomain: "match-3a560.firebaseapp.com",
   projectId: "match-3a560",
-  storageBucket: "match-3a560.firebasestorage.app",
+  storageBucket: "match-3a560.appspot.com", // 수정된 값
   messagingSenderId: "56457919521",
   appId: "1:56457919521:web:972b12f8072795eba2f760",
   measurementId: "G-WLHKGMQ16L",

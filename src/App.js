@@ -13,7 +13,9 @@ import KoreaSoccerPage from './pages/KoreaSoccerPage';
 import PremierLeaguePage from './pages/PremierLeaguePage';
 import AdminKoreaSoccerPage from './pages/AdminKoreaSoccerPage';
 import AdminPremierLeaguePage from './pages/AdminPremierLeaguePage';
+import CustomMatchPage from './pages/CustomMatchPage'; // 사설 경기 커스텀 페이지 추가
 import { EventProvider } from './context/EventContext';
+import CompleteSignupPage from './pages/CompleteSignupPage';
 import './App.css';
 
 function App() {
@@ -71,7 +73,7 @@ function App() {
                 <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/user-info" element={<UserInfoPage user={currentUser} />} />
-
+                <Route path="/complete-signup" element={<CompleteSignupPage />} />
                 {/* 관리자 페이지 */}
                 <Route path="/admin-schedule" element={<AdminPage />} />
                 <Route path="/admin-emails" element={<AdminEmailsPage />} />
@@ -81,6 +83,9 @@ function App() {
                 {/* 종목별 사용자 페이지 */}
                 <Route path="/korea-soccer" element={<KoreaSoccerPage />} />
                 <Route path="/premier-league" element={<PremierLeaguePage />} />
+
+                {/* 사설 경기 커스텀 페이지 */}
+                <Route path="/custom-match" element={<CustomMatchPage />} />
               </Routes>
             </main>
           </div>

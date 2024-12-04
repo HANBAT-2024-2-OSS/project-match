@@ -13,6 +13,7 @@ const Sidebar = () => {
         <li onClick={() => navigate('/premier-league')}>프리미어리그</li>
         <li onClick={() => navigate('/baseball')}>야구</li>
         <li onClick={() => navigate('/world-cup')}>월드컵</li>
+        <li onClick={() => navigate('/custom-match')}>사설 경기 커스텀</li> {/* 새로운 링크 */}
       </ul>
     </div>
   );

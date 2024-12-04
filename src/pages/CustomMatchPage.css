@@ -1,0 +1,64 @@
+.custom-match-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .match-settings {
+    margin-bottom: 20px;
+  }
+  
+  .match-settings label {
+    margin-right: 15px;
+  }
+  
+  .match-settings input,
+  .match-settings select {
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .match-settings button {
+    padding: 5px 10px;
+    margin-left: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .match-settings button:hover {
+    background-color: #0056b3;
+  }
+  
+  .match-display {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .matches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .match {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    min-width: 150px;
+    text-align: center;
+  }

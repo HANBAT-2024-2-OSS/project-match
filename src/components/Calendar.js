@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Calendar.css";
 
-const Calendar = ({ events, onDateClick, isAdmin }) => {
-  const [currentMonth, setCurrentMonth] = useState(0); // 0: January, 11: December
-  const [newEvent, setNewEvent] = useState({ date: "", schedule: "", result: "" });
+const Calendar = ({ events = {}, onDateClick }) => {
+  const [currentMonth, setCurrentMonth] = useState(0);
 
   const daysInMonth = (month, year) => new Date(year, month + 1, 0).getDate();
 
@@ -13,11 +12,6 @@ const Calendar = ({ events, onDateClick, isAdmin }) => {
 
   const handleNextMonth = () => {
     setCurrentMonth((prev) => (prev === 11 ? 0 : prev + 1));
-  };
-
-  const handleAddEvent = () => {
-    onDateClick(newEvent.date, { schedule: newEvent.schedule, result: newEvent.result });
-    setNewEvent({ date: "", schedule: "", result: "" });
   };
 
   const renderDays = () => {
@@ -30,7 +24,7 @@ const Calendar = ({ events, onDateClick, isAdmin }) => {
       const event = events[dateKey];
 
       days.push(
-        <div key={day} className="calendar-day" onClick={() => onDateClick(dateKey)}>
+        <div key={day} className="calendar-day">
           <div className="date">{day}</div>
           {event && (
             <>
@@ -53,30 +47,6 @@ const Calendar = ({ events, onDateClick, isAdmin }) => {
       </div>
 
       <div className="calendar-grid">{renderDays()}</div>
-
-      {isAdmin && (
-        <div className="add-event">
-          <h3>새 일정 추가</h3>
-          <input
-            type="date"
-            value={newEvent.date}
-            onChange={(e) => setNewEvent({ ...newEvent, date: e.target.value })}
-          />
-          <input
-            type="text"
-            placeholder="경기 제목"
-            value={newEvent.schedule}
-            onChange={(e) => setNewEvent({ ...newEvent, schedule: e.target.value })}
-          />
-          <input
-            type="text"
-            placeholder="결과"
-            value={newEvent.result}
-            onChange={(e) => setNewEvent({ ...newEvent, result: e.target.value })}
-          />
-          <button onClick={handleAddEvent}>추가</button>
-        </div>
-      )}
     </div>
   );
 };
