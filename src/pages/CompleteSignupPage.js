@@ -16,7 +16,7 @@ const CompleteSignupPage = () => {
     }
 
     if (!isSignInWithEmailLink(auth, window.location.href)) {
-      setMessage("유효하지 않은 링크입니다.");
+      setMessage("유효하지 않은 링크입니다. 승인된 도메인에서만 링크가 동작합니다.");
       return;
     }
 

@@ -9,7 +9,7 @@ const SignupPage = () => {
 
   const handleSendLink = async () => {
     const actionCodeSettings = {
-      url: "https://www.example.com/finishSignUp", // 리디렉션 URL (Firebase 콘솔에 등록 필요)
+      url: "https://match-3a560.firebaseapp.com/complete-signup", // 리디렉션 URL (Firebase 콘솔에 등록 필요)
       handleCodeInApp: true,
       iOS: {
         bundleId: "com.example.ios",
