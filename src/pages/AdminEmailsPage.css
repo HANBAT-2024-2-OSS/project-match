@@ -1,0 +1,32 @@
+/* Admin Emails Page 스타일 */
+.admin-emails-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-emails-page h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .admin-emails-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-emails-page li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  

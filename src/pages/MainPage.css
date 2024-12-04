@@ -1,0 +1,141 @@
+/* 전체 페이지 스타일 */
+.main-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* 알림창 오버레이 */
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 반투명 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 맨앞에 표시 */
+}
+
+/* 알림창 박스 */
+.alert-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+
+/* 알림창 텍스트 */
+.alert-box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 닫기 버튼 */
+.close-alert-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.close-alert-btn:hover {
+  background-color: #0056b3;
+}
+
+/* 메인 콘텐츠 섹션 */
+.schedule-section,
+.results-section,
+.ranking-section {
+  margin-bottom: 30px;
+}
+
+.schedule-section h2,
+.results-section h2,
+.ranking-section h2 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.schedule-section ul,
+.results-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-section ul li,
+.results-section ul li {
+  padding: 5px 0;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ranking-table th,
+.ranking-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.ranking-table th {
+  background-color: #f3f6fb;
+  color: #333;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.main-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alert-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+}
+
+.close-alert-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-alert-btn:hover {
+  background: #0056b3;
+}

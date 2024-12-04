@@ -1,0 +1,72 @@
+/* AdminSidebar 기본 스타일 */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Sidebar와 동일한 위치 */
+  width: 220px; /* 기본 확장 상태 너비 */
+  height: 100vh;
+  background-color: rgba(68, 68, 68, 0.9); /* 불투명 효과 */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1200; /* Sidebar보다 위에 배치 */
+  transition: width 0.3s ease-in-out; /* 너비 변경 애니메이션 */
+}
+
+.admin-sidebar.collapsed {
+  width: 60px; /* 축소 상태 너비 */
+}
+
+/* 텍스트 숨김 */
+.admin-sidebar.collapsed h3,
+.admin-sidebar.collapsed ul li span {
+  display: none; /* 텍스트를 숨김 */
+}
+
+/* 목록 스타일 */
+.admin-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar ul li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.admin-sidebar ul li i {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.admin-sidebar ul li span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-sidebar ul li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* 열고 닫기 버튼 */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: -50px; /* Sidebar 오른쪽에 버튼 배치 */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1300; /* 버튼은 AdminSidebar 위에 표시 */
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}

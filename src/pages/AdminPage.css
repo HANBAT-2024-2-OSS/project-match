@@ -1,0 +1,68 @@
+.admin-page {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.6); /* 반투명한 검정색 배경 */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  
+  .admin-sidebar h3 {
+    margin-top: 0;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .schedule-section,
+  .results-section,
+  .ranking-section {
+    background-color: #e0f7df; /* 연두색 */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ranking-table th, .ranking-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .ranking-table th {
+    background-color: #00aaff; /* 하늘색 */
+    color: white;
+  }
+  
+  .ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
